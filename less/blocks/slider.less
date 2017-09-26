@@ -1,0 +1,57 @@
+.slider__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+  padding-bottom: 80px;
+}
+
+.slider__toggle {
+  position: absolute;
+  z-index: 100;
+  bottom: 28px;
+  width: 6px;
+  height: 5px;
+  background-color: #bec2c7;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__input--one:checked ~ .slider__slides .slider__toggle--one,
+.slider__input--two:checked ~ .slider__slides .slider__toggle--two,
+.slider__input--three:checked ~ .slider__slides .slider__toggle--three,
+.slider__input--four:checked ~ .slider__slides .slider__toggle--four,
+.slider__input--five:checked ~ .slider__slides .slider__toggle--five,
+.slider__input--six:checked ~ .slider__slides .slider__toggle--six {
+  width: 6px;
+  height: 5px;
+  background-color: white;
+  border: 3px solid @base-color;
+}
+
+.slider__input--one:checked ~ .slider__slides .slider__item--one,
+.slider__input--two:checked ~ .slider__slides .slider__item--two,
+.slider__input--three:checked ~ .slider__slides .slider__item--three,
+.slider__input--four:checked ~ .slider__slides .slider__item--four,
+.slider__input--five:checked ~ .slider__slides .slider__item--five,
+.slider__input--six:checked ~ .slider__slides .slider__item--six {
+  display: block;
+}
+
+.slider__toggle--one,
+.slider__toggle--four {
+  left: 10px;
+}
+
+.slider__toggle--two,
+.slider__toggle--five {
+  left: 30px;
+}
+
+.slider__toggle--three,
+.slider__toggle--six {
+  left: 50px;
+}

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo"><img class="pahe-header__image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink"></a>
+      <a class="page-header__logo"><img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -60,99 +61,103 @@
       <section class="feedback">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="feedback__slider  slider">
-          <input class="visually-hidden  slider__input  slider__input--one" type="radio" name="toggle" id="btn-1" checked>
-          <input class="visually-hidden  slider__input  slider__input--two" type="radio" name="toggle" id="btn-2">
-          <input class="visually-hidden  slider__input  slider__input--three" type="radio" name="toggle" id="btn-3">
-          <ul class="feeadback__list  slider__list">
-            <li class="feedback__item  slider__item  slider__item--one">
-              <cite class="feedback__author">Николай Петров</cite>
-              <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="feedback__item  slider__item  slider__item--two">
-              <cite class="feedback__author">Николай Иванов</cite>
-              <p class="feedback__text">«Это приложение...»</p>
-            </li>
-            <li class="feedback__item  slider__item  slider__item--three">
-              <cite class="feedback__author">Николай Сидоров</cite>
-              <p class="feedback__text">«Это приложение...»</p>
-            </li>
-          </ul>
-          <div class="feedback__controls  slider__controls">
-            <label class="slider__toggle" for="btn-1" tabindex="0"></label>
-            <label class="slider__toggle" for="btn-2" tabindex="0"></label>
-            <label class="slider__toggle" for="btn-3" tabindex="0"></label>
+          <input class="visually-hidden  slider__input  slider__input--one" type="radio" name="feedback-toggle" id="btn-1" checked>
+          <input class="visually-hidden  slider__input  slider__input--two" type="radio" name="feedback-toggle" id="btn-2">
+          <input class="visually-hidden  slider__input  slider__input--three" type="radio" name="feedback-toggle" id="btn-3">
+          <div class="slider__slides">
+            <ul class="feeadback__list  slider__list">
+              <li class="feedback__item  slider__item  slider__item--one">
+                <cite class="feedback__author">Николай Петров</cite>
+                <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="feedback__item  slider__item  slider__item--two">
+                <cite class="feedback__author">Николай Иванов</cite>
+                <p class="feedback__text">«Это приложение...»</p>
+              </li>
+              <li class="feedback__item  slider__item  slider__item--three">
+                <cite class="feedback__author">Николай Сидоров</cite>
+                <p class="feedback__text">«Это приложение...»</p>
+              </li>
+            </ul>
+            <div class="feedback__controls  slider__controls">
+              <label class="slider__toggle  slider__toggle--one" for="btn-1" tabindex="0"></label>
+              <label class="slider__toggle  slider__toggle--two" for="btn-2" tabindex="0"></label>
+              <label class="slider__toggle  slider__toggle--three" for="btn-3" tabindex="0"></label>
+            </div>
           </div>
         </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
         <div class="price__slider  slider">
-          <input class="visually-hidden  slider__input  slider__input--four" type="radio" name="toggle" id="btn-4">
-          <input class="visually-hidden  slider__input  slider__input-five" type="radio" name="toggle" id="btn-5" checked>
-          <input class="visually-hidden  slider__input  slider__input--six" type="radio" name="toggle" id="btn-6">
-          <ul class="price__list  slider__list">
-            <li class="price__item  slider__item  slider__item--one">
-              <table class="price__table">
-                <tr class="price__line">
-                  <th class="price__column  price__column--header">
-                    <span class="price__header">Анлим</span>
-                    <span class="price__value">9,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Розовый фильтр</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Смайлики</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Комментарии</td>
-                </tr>
-              </table>
-            </li>
-            <li class="price__item  slider__item  slider__item--two">
-              <table class="price__table">
-                <tr class="price__line">
-                  <th class="price__column  price__column--header">
-                    <span class="price__header">Стандарт</span>
-                    <span class="price__value">3,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Розовый фильтр</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Смайлики</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Комментарии</td>
-                </tr>
-              </table>
-            </li>
-            <li class="price__item  slider__item  slider__item--three">
-              <table class="price__table">
-                <tr class="price__line">
-                  <th class="price__column  price__column--header">
-                    <span class="price__header">...</span>
-                    <span class="price__value">3,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Розовый фильтр</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Смайлики</td>
-                </tr>
-                <tr class="price__line">
-                  <td class="price__column">Комментарии</td>
-                </tr>
-              </table>
-            </li>
-          </ul>
-          <div class="price__controls  slider__controls">
-            <label class="slider__toggle" for="btn-4" tabindex="0"></label>
-            <label class="slider__toggle" for="btn-5" tabindex="0"></label>
-            <label class="slider__toggle" for="btn-6" tabindex="0"></label>
+          <input class="visually-hidden  slider__input  slider__input--four" type="radio" name="price-toggle" id="btn-4" checked>
+          <input class="visually-hidden  slider__input  slider__input-five" type="radio" name="price-toggle" id="btn-5">
+          <input class="visually-hidden  slider__input  slider__input--six" type="radio" name="price-toggle" id="btn-6">
+          <div class="slider__slides">
+            <ul class="price__list  slider__list">
+              <li class="price__item  slider__item  slider__item--four">
+                <table class="price__table">
+                  <tr class="price__line">
+                    <th class="price__column  price__column--header">
+                      <span class="price__header">Анлим</span>
+                      <span class="price__value">9,99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Розовый фильтр</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Смайлики</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Комментарии</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="price__item  slider__item  slider__item--five">
+                <table class="price__table">
+                  <tr class="price__line">
+                    <th class="price__column  price__column--header">
+                      <span class="price__header">Стандарт</span>
+                      <span class="price__value">3,99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Розовый фильтр</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Смайлики</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Комментарии</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="price__item  slider__item  slider__item--six">
+                <table class="price__table">
+                  <tr class="price__line">
+                    <th class="price__column  price__column--header">
+                      <span class="price__header">...</span>
+                      <span class="price__value">3,99 USD</span>
+                    </th>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Розовый фильтр</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Смайлики</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Комментарии</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+            <div class="price__controls  slider__controls">
+              <label class="slider__toggle  slider__toggle--four" for="btn-4" tabindex="0"></label>
+              <label class="slider__toggle  slider__toggle--five" for="btn-5" tabindex="0"></label>
+              <label class="slider__toggle  slider__toggle--six" for="btn-6" tabindex="0"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -175,7 +180,7 @@
 
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--hidden">
       <a class="page-footer__logo"><img class="page-footer__image" src="http://placehold.it/147x40" width="147" height="40" alt="Pink"></a>
       <div class="social-icons">
         <a class="social-icons__item  social-icons__item--tw" href="#">Twitter</a>
