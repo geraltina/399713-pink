@@ -1,0 +1,42 @@
+.photos {
+  width: 100%;
+}
+
+.photos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  .margin();
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.photos__description {
+  width: 280px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.photos__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photos__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photos__text {
+  margin: 0;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,40 @@
+.filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.filter-list__item {
+  height: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.filter-list__item--active {
+  opacity: 1;
+}
+
+.filter-list__item--framing {
+  width: 48px;
+  padding-top: 48px;
+  margin-right: 34px;
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.filter-list__item--effects {
+  width: 48px;
+  padding-top: 48px;
+  margin-right: 40px;
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.filter-list__item--contrast {
+  width: 32px;
+  padding-top: 32px;
+  background-image: url("../img/icon-editor-contrast.svg");
+}

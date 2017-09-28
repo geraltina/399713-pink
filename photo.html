@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="pahe-header__image" src="http://placehold.it/75x22" width="75" height="22" alt="Pink"></a>
+      <a class="page-header__logo" href="index.html"><img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list  site-list">
@@ -32,7 +33,7 @@
       </div>
       <section class="photos">
         <article class="photos__item">
-          <img class="photos__image  photos__image--panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Фото-1">
+          <img class="photos__image  photos__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото-1">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Анна</cite>
@@ -46,7 +47,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-2">
+          <img class="photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото-2">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Левон</cite>
@@ -60,7 +61,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-3">
+          <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото-3">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Антон</cite>
@@ -74,7 +75,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-4">
+          <img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото-4">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Борис</cite>
@@ -88,7 +89,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-5">
+          <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото-5">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Сергей</cite>
@@ -102,7 +103,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-6">
+          <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото-6">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Максим</cite>
@@ -116,7 +117,7 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото-7">
+          <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото-7">
           <div class="photos__description">
             <div class="photos__wrapper">
               <cite class="photos__author">Надежда</cite>
@@ -131,31 +132,37 @@
         </article>
       </section>
       <div class="page-main__promo">
-        <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="page-main__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="posting">
-        <img class="posting__image" src="http://placehold.it/280x374" width="280" height="374" alt="Ваше фото">
-        <ul class="posting__filter filter-list">
-          <li class="filter-list__item">Кадрирование</li>
-          <li class="filter-list__item">Эффекты</li>
-          <li class="filter-list__item">Контраст</li>
-        </ul>
-        <div class="posting__scale">
-          <span class="posting__controller"></span>
+        <div class="posting__wrapper  posting__wrapper--width">
+          <img class="posting__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+          <ul class="posting__filter filter-list">
+            <li class="filter-list__item  filter-list__item--framing filter-list__item--active">Кадрирование</li>
+            <li class="filter-list__item  filter-list__item--effects">Эффекты</li>
+            <li class="filter-list__item  filter-list__item--contrast">Контраст</li>
+          </ul>
+          <div class="posting__scale">
+            <span class="posting__controller"></span>
+          </div>
         </div>
-        <button class="posting__button  button  button--submit" type="submit">Запостить</button>
-        <button class="posting__button  button  button--reset" type="reset">Отмена</button>
+        <div class="posting__buttons">
+          <div class="posting__wrapper  posting__wrapper--color">
+            <button class="posting__button  button  button--submit" type="submit">Запостить</button>
+            <button class="posting__button  button  button--reset" type="reset">Отмена</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__image" src="http://placehold.it/147x40" width="147" height="40" alt="Pink"></a>
+      <a class="page-footer__logo" href="index.html"><img class="page-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
       <div class="social-icons">
         <a class="social-icons__item  social-icons__item--tw" href="#">Twitter</a>
         <a class="social-icons__item  social-icons__item--fb" href="#">Facebook</a>
         <a class="social-icons__item  social-icons__item--yt" href="#">Youtube</a>
       </div>
       <div class="copyright">
-        <p class="copyright__text">Разработано <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></p>
+        <span class="copyright__text">Разработано</span><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
       </div>
     </footer>
   </body>
