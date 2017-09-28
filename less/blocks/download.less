@@ -1,5 +1,6 @@
 .download {
-  width: 320px;
+  width: 100%;
+  .margin();
   padding-top: 396px;
   background-color: @dark-color;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -9,12 +10,17 @@
   box-sizing: border-box;
 }
 
-.download__wrapper {
-  width: 320px;
+.download__wrapper--color {
+  width: 100%;
   padding-top: 30px;
   .padding();
   box-sizing: border-box;
   background-color: @dark-color;
+}
+
+.download__wrapper--width {
+  width: 320px;
+  .margin();
 }
 
 .download__button {
