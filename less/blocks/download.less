@@ -1,6 +1,67 @@
 .download {
+  width: 320px;
   padding-top: 396px;
-  .padding();
   background-color: @dark-color;
+  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 30% 30%, 45% 0;
   color: white;
+  box-sizing: border-box;
+}
+
+.download__wrapper {
+  width: 320px;
+  padding-top: 30px;
+  .padding();
+  box-sizing: border-box;
+  background-color: @dark-color;
+}
+
+.download__button {
+  margin-bottom: 20px;
+  color: white;
+  border: 3px solid white;
+}
+
+.download__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+}
+
+.download__item {
+  height: 0;
+  margin-right: 37px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.download__item--ios {
+  width: 47px;
+  padding-top: 56px;
+  background-image: url(../img/logo-apple.svg);
+}
+
+.download__item--android {
+  width: 43px;
+  padding-top: 47px;
+  background-image: url(../img/logo-android.svg);
+}
+
+.download__item--windows {
+  width: 44px;
+  padding-top: 41px;
+  background-image: url(../img/logo-microsoft.svg);
+}
+
+.download__text {
+  width: 280px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
 }

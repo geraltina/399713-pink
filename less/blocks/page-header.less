@@ -1,10 +1,15 @@
 .page-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  z-index: 100;
+  width: 320px;
   padding-top: 21px;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
   background-color: @base-color;
   .padding();
+  box-sizing: border-box;
 }
 
 .page-header__logo {
