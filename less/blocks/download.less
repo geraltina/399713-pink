@@ -8,19 +8,53 @@
   background-position: 30% 30%, 45% 0;
   color: white;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 106px;
+    background-color: @dark-color;
+    background-position: 80% 100%, 45% 0;
+  }
 }
 
 .download__wrapper--color {
   width: 100%;
   padding-top: 30px;
-  .padding();
   box-sizing: border-box;
   background-color: @dark-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    background-color: transparent;
+  }
 }
 
 .download__wrapper--width {
   width: 320px;
   .margin();
+  .padding();
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.download__header--nomobile {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    max-width: 192px;
+    margin: 0;
+    margin-bottom: 40px;
+    .margin();
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 .download__button {
@@ -57,6 +91,10 @@
   width: 43px;
   padding-top: 47px;
   background-image: url("../img/logo-android.svg");
+
+  @media (min-width: @tablet-width) {
+    opacity: 0.4;
+  }
 }
 
 .download__item--windows {
@@ -70,5 +108,11 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 27px;
+  font-weight: 300;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    font-size: 18px;
+  }
 }

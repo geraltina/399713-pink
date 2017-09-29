@@ -1,13 +1,31 @@
 .feedback {
   width: 100%;
-  .padding();
-  box-sizing: border-box;
 }
 
 .feedback__wrapper {
   position: relative;
   width: 320px;
+  min-height: 353px;
   .margin();
+  .padding();
+  padding-top: 48px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    min-height: 273px;
+    padding-top: 0;
+    font-size: 18px;
+  }
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .feedback__author {
@@ -16,10 +34,30 @@
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
+  line-height: 30px;
   color: black;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+}
+
+.feedback__description {
+  display: none;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+  }
 }
 
 .feedback__text {
+  margin: 0;
+  line-height: 30px;
   text-align: center;
 }

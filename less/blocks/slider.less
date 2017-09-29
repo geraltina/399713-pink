@@ -1,5 +1,6 @@
 .slider__list {
   padding-left: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -44,20 +45,32 @@
 .slider__input--four:checked ~ .slider__slides .slider__item--four,
 .slider__input--five:checked ~ .slider__slides .slider__item--five,
 .slider__input--six:checked ~ .slider__slides .slider__item--six {
-  display: block;
+  display: flex;
 }
 
 .slider__toggle--one,
 .slider__toggle--four {
   left: 130px;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .slider__toggle--two,
 .slider__toggle--five {
   left: 154px;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .slider__toggle--three,
 .slider__toggle--six {
   left: 178px;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
