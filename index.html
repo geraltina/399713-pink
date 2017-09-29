@@ -64,6 +64,11 @@
           </ul>
         </div>
       </section>
+      <section class="effect">
+        <h2 class="effect__header">Эффект на 24 часа</h2>
+        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="effect__link">Узнать больше об исследовании</a>
+      </section>
       <section class="feedback">
         <div class="feedback__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
@@ -74,16 +79,25 @@
             <div class="slider__slides">
               <ul class="feeadback__list  slider__list">
                 <li class="feedback__item  slider__item  slider__item--one">
-                  <cite class="feedback__author">Николай Петров</cite>
+                  <div class="feedback__person">
+                    <cite class="feedback__author">Николай Петров</cite>
+                    <p class="feedback__description">25 лет, водитель трамвая</p>
+                  </div>
                   <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </li>
                 <li class="feedback__item  slider__item  slider__item--two">
-                  <cite class="feedback__author">Николай Иванов</cite>
-                  <p class="feedback__text">«Это приложение...»</p>
+                  <div class="feedback__person">
+                    <cite class="feedback__author">Василий Сидоров</cite>
+                    <p class="feedback__description">22 года, фрезировщик</p>
+                  </div>
+                  <p class="feedback__text">«Pink - это супер-крутое приложение!!!»</p>
                 </li>
                 <li class="feedback__item  slider__item  slider__item--three">
-                  <cite class="feedback__author">Николай Сидоров</cite>
-                  <p class="feedback__text">«Это приложение...»</p>
+                  <div class="feedback__person">
+                    <cite class="feedback__author">Иван Иванов</cite>
+                    <p class="feedback__description">35 лет, официант</p>
+                  </div>
+                  <p class="feedback__text">«Теперь я без Пинк никуда! Выкладываю новые фотки каждый день!»</p>
                 </li>
               </ul>
               <div class="feedback__controls  slider__controls">
@@ -104,12 +118,23 @@
             <input class="visually-hidden  slider__input  slider__input--six" type="radio" name="price-toggle" id="btn-6">
             <div class="slider__slides">
               <ul class="price__list  slider__list">
+                <table class="price__table price__table--noheader">
+                  <tr class="price__line">
+                    <td class="price__column">Розовый фильтр</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Смайлики</td>
+                  </tr>
+                  <tr class="price__line">
+                    <td class="price__column">Комментарии</td>
+                  </tr>
+                </table>
                 <li class="price__item  slider__item  slider__item--four">
                   <table class="price__table">
                     <tr class="price__line">
                       <th class="price__column  price__column--header">
-                        <span class="price__header">Анлим</span>
-                        <span class="price__value">9,99 USD</span>
+                        <span class="price__header">База</span>
+                        <span class="price__value">1,99 USD</span>
                       </th>
                     </tr>
                     <tr class="price__line">
@@ -146,18 +171,18 @@
                   <table class="price__table">
                     <tr class="price__line">
                       <th class="price__column  price__column--header">
-                        <span class="price__header">...</span>
-                        <span class="price__value">3,99 USD</span>
+                        <span class="price__header">Анлим</span>
+                        <span class="price__value">9,99 USD</span>
                       </th>
                     </tr>
                     <tr class="price__line">
-                      <td class="price__column">Розовый фильтр</td>
+                      <td class="price__column  price__column--yes">Розовый фильтр</td>
                     </tr>
                     <tr class="price__line">
-                      <td class="price__column">Смайлики</td>
+                      <td class="price__column  price__column--yes">Смайлики</td>
                     </tr>
                     <tr class="price__line">
-                      <td class="price__column">Комментарии</td>
+                      <td class="price__column  price__column--yes">Комментарии</td>
                     </tr>
                   </table>
                 </li>
