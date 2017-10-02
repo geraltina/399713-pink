@@ -17,6 +17,14 @@
   background-position: 50% 0;
   overflow: hidden;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 191px;
+    padding-bottom: 148px;
+    margin-top: -110px;
+    font-size: 50px;
+    line-height: 56px;
+  }
 }
 
 .page-main__promo {
@@ -31,4 +39,8 @@
   margin: 0;
   .margin();
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 450px;
+  }
 }

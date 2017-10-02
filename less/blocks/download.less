@@ -1,6 +1,7 @@
 .download {
   width: 100%;
   .margin();
+  margin-top: -71px;
   padding-top: 396px;
   background-color: @dark-color;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -10,9 +11,11 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 102px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 106px;
     background-color: @dark-color;
+    background-image: none;
     background-position: 80% 100%, 45% 0;
   }
 }
@@ -24,12 +27,19 @@
   background-color: @dark-color;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    width: 640px;
+    margin-top: -98px;
+    padding-top: 212px;
+    .margin();
     background-color: transparent;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 100%, 45% 0;
   }
 }
 
 .download__wrapper--width {
+  position: relative;
   width: 320px;
   .margin();
   .padding();

@@ -1,38 +1,122 @@
 .posting {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
-.posting__wrapper {
+.posting__wrapper--common {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 57px;
+    width: 640px;
+    .padding();
+    .margin();
+    box-sizing: border-box;
+  }
+}
+
+.posting__wrapper--width {
   width: 320px;
   .padding();
   .margin();
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    padding: 0;
+  }
+}
+
+.posting__wrapper--position {
+  position: relative;
+}
+
+.posting__wrapper--flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-left: 45px;
+  }
+}
+
+.posting__wrapper--color {
+  width: 320px;
+  .margin();
+  .padding();
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .posting__image {
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .posting__filter {
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .posting__scale {
   position: relative;
   width: 240px;
   height: 2px;
-  margin-left: 20px;
+  .margin();
   margin-bottom: 29px;
   background-color: @base-color;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: -40px;
-    width: 320px;
-    height: 1px;
-    background-color: #dddfe0;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 202px;
+    margin-top: 70px;
+  }
+}
+
+.posting__scale:first-child {
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+  }
+}
+
+.posting__scale::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -40px;
+  width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
+
+  @media (min-width: @tablet-width) {
+    left: -70px;
+    bottom: -40px;
+    width: 275px;
+  }
+}
+
+.posting__scale--nomobile {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }
 
@@ -45,6 +129,14 @@
   background-color: white;
   border: 2px solid @pink-color;
   border-radius: 50%;
+
+  &--two {
+    right: 163px;
+  }
+
+  &--three {
+    right: 92px;
+  }
 }
 
 .posting__buttons {
@@ -54,6 +146,12 @@
   padding-bottom: 41px;
   background-color: #f2f2f2;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    padding-left: 47px;
+  }
 }
 
 .posting__button {

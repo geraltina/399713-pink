@@ -5,12 +5,25 @@
   flex-direction: column;
   z-index: 100;
   width: 100%;
-  .margin();
-  .padding();
   padding-top: 21px;
   padding-bottom: 21px;
   background-color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+  .margin();
+  .padding();
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
 }
 
 .page-header__logo {

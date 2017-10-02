@@ -6,6 +6,11 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-right: 30px;
+  }
 }
 
 .filter-list__item {
@@ -13,6 +18,18 @@
   overflow: hidden;
   background-repeat: no-repeat;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+    margin-bottom: 24px;
+    opacity: 1;
+  }
+}
+
+.filter-list__item:first-child {
+  @media (min-width: @tablet-width) {
+    margin-top: 9px;
+  }
 }
 
 .filter-list__item--active {
@@ -24,6 +41,10 @@
   padding-top: 48px;
   margin-right: 34px;
   background-image: url("../img/icon-editor-crop.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .filter-list__item--effects {
@@ -31,6 +52,11 @@
   padding-top: 48px;
   margin-right: 40px;
   background-image: url("../img/icon-editor-fill.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: -2px;
+  }
 }
 
 .filter-list__item--contrast {

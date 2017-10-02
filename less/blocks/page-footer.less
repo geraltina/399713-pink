@@ -8,6 +8,13 @@
   padding-top: 40px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    .margin();
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer--hidden {
@@ -16,4 +23,8 @@
 
 .page-footer__logo {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
