@@ -44,3 +44,19 @@
     width: 450px;
   }
 }
+
+.page-main__text--nomobile {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin: 0;
+    .margin();
+    width: 280px;
+    overflow: visible;
+    clip: auto;
+  }
+}
