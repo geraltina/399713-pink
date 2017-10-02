@@ -1,125 +1,52 @@
 .price {
   width: 100%;
-  padding-top: 65px;
+  padding-top: 39px;
   background-color: #f2f2f2;
-  box-sizing: border-box;
 }
 
 .price__wrapper {
-  position: relative;
-  width: 320px;
-  .padding();
+  min-width: 320px;
+  max-width: 640px;
   .margin();
+  overflow: hidden;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 640px;
-    padding: 0;
-  }
-}
-
-.price__list {
-  display: flex;
-
-  @media (min-width: @tablet-width) {
-    justify-content: flex-end;
-  }
-}
-
-.price__item {
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-right: 2px;
-  }
-}
-
-.price__item--nomobile {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-}
-
-.price__table--noheader {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    .padding();
   }
 }
 
 .price__table {
+  width: 840px;
   border-collapse: collapse;
-}
-
-.price__table--hit {
-  position: relative;
-}
-
-.price__table--hit::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 200;
-  width: 74px;
-  height: 73px;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/bg-hit-tablet.svg");
-  }
-}
-
-.price__table--hit::after {
-  content: "ХИТ";
-  position: absolute;
-  top: 12px;
-  left: 15px;
-  z-index: 200;
-  width: 26px;
-  height: 27px;
-  color: white;
-  transform: rotate(-45deg);
-
-  @media (min-width: @tablet-width) {
-    top: 8px;
-    left: 7px;
+    width: 600px;
   }
 }
 
 .price__column {
   position: relative;
-  width: 152px;
-  padding: 20px 25px;
+  width: 276px;
+  padding: 0;
+  padding: 14px 21px;
+  line-height: 30px;
   text-transform: uppercase;
   background-color: white;
+  border: 2px solid #e5e5e5;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: auto;
-    min-height: 45px;
+    width: 152px;
+    height: 45px;
     padding: 0;
-    border: 2px solid #e5e5e5;
   }
-}
-
-.price__column--yes,
-.price__column--no {
-  @media (min-width: @tablet-width) {
-    height: 48px;
-    border-left: 0;
-  }
-}
-
-.price__column--yes::after,
-.price__column--no::after {
-  content: "";
-  position: absolute;
 }
 
 .price__column--yes::after {
+  content: "";
+  position: absolute;
   top: 22px;
   right: 17px;
   width: 31px;
@@ -129,11 +56,13 @@
 
   @media (min-width: @tablet-width) {
     top: 15px;
-    right: 60px;
+    right: 50px;
   }
 }
 
 .price__column--no::after {
+  content: "";
+  position: absolute;
   top: 15px;
   right: 19px;
   width: 27px;
@@ -143,68 +72,52 @@
 
   @media (min-width: @tablet-width) {
     top: 8px;
-    right: 67px;
+    right: 57px;
   }
-}
-
-.price__column--grey {
-  width: 155px;
-  height: 81px;
-  background-color: #f2f2f2;
-  border: 0;
-}
-
-.price__column--name {
-  min-width: 150px;
-  padding: 8px 15px;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: none;
-  box-sizing: border-box;
 }
 
 .price__column--header {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 90px;
-  line-height: 30px;
-  color: white;
-  background-color: @dark-color;
-  text-transform: uppercase;
-  box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    width: auto;
-    padding-top: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 8px;
-    border: 0;
-  }
-}
-
-.price__header {
-  display: inline-block;
-  font-weight: 700;
   font-size: 18px;
-  text-align: center;
+  background-color: @dark-color;
+  color: white;
+  border-color: @dark-color;
+  border-right-color: #e5e5e5;
+
+  &:last-child {
+    border-right-color: @dark-color;
+  }
 
   @media (min-width: @tablet-width) {
-    width: auto;
-    font-size: 16px;
+    padding: 14px 21px;
   }
 }
 
 .price__value {
-  display: inline-block;
-  min-width: 100px;
   font-weight: 300;
   font-size: 24px;
+}
+
+.price__column--name {
+  display: none;
 
   @media (min-width: @tablet-width) {
-    width: auto;
-    font-size: 18px;
-    text-align: center;
+    display: table-cell;
+    padding-right: 19px;
+    padding-left: 14px;
+    text-transform: none;
+    box-sizing: border-box;
+  }
+}
+
+.price__column--grey {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+    background-color: #f2f2f2;
+    border-left-color: #f2f2f2;
+    border-top-color: #f2f2f2;
+    border-right-color: #f2f2f2;
   }
 }
 
