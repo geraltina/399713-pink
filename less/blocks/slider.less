@@ -23,6 +23,12 @@
   transition: opacity 0.6s ease-in-out;
 }
 
+.slider-transform__slides {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
 .slider__toggle,
 .slider-transform__toggle {
   position: absolute;
@@ -34,6 +40,10 @@
   border: 3px solid white;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .slider-transform__toggle--four,
@@ -44,6 +54,12 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.slider-transform__controls {
+  position: relative;
+  max-width: 320px;
+  .margin();
 }
 
 .slider__input--one:checked ~ .slider__slides .slider__toggle--one,

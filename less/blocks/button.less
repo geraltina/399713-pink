@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  width: 281px;
+  width: 278px;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 15.5px;
@@ -12,6 +12,19 @@
   border-radius: 30px;
   box-sizing: border-box;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    min-width: 260px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 21px;
+    line-height: 18px;
+  }
 }
 
 .button--submit {

@@ -2,6 +2,19 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.effect__wrapper {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     width: 620px;
@@ -15,6 +28,23 @@
     background-repeat: no-repeat;
     background-position: 0;
     box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding-left: 376px;
+    padding-right: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 73px;
+      left: 10px;
+      width: 298px;
+      height: 345px;
+      background-image: url(../img/icon-editor-diagram-fill.svg);
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -30,6 +60,10 @@
 .effect__text {
   margin-top: 15px;
   margin-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
 }
 
 .effect__link {
