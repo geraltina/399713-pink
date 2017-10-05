@@ -217,6 +217,12 @@ fieldset.contest-form__wrapper {
   border: 2px solid #e5e5e5;
 }
 
+.contest-form__checkbox:checked + .contest-form__label--checkbox::before {
+  background-image: url(../img/icon-yes.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 .contest-form__radio + .contest-form__label--radio::before {
   content: "";
   position: absolute;

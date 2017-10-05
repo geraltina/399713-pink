@@ -11,6 +11,10 @@
     flex-direction: column;
     margin-right: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 44px;
+  }
 }
 
 .filter-list__item {
@@ -24,11 +28,20 @@
     margin-bottom: 24px;
     opacity: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 29px;
+    margin-bottom: 0;
+  }
 }
 
 .filter-list__item:first-child {
   @media (min-width: @tablet-width) {
     margin-top: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -15px;
   }
 }
 
@@ -43,7 +56,17 @@
   background-image: url("../img/icon-editor-crop.svg");
 
   @media (min-width: @tablet-width) {
+    width: 24px;
+    padding-top: 24px;
     margin-right: 0;
+    background-image: url(../img/icon-editor-crop-small.svg);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    padding-top: 48px;
+    margin-right: 0;
+    background-image: url("../img/icon-editor-crop-pink.svg");
   }
 }
 
@@ -54,8 +77,18 @@
   background-image: url("../img/icon-editor-fill.svg");
 
   @media (min-width: @tablet-width) {
+    width: 24px;
+    padding-top: 24px;
     margin-right: 0;
     margin-left: -2px;
+    background-image: url(../img/icon-editor-fill-small.svg);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    padding-top: 48px;
+    margin-right: 0;
+    background-image: url("../img/icon-editor-fill-pink.svg");
   }
 }
 
@@ -63,4 +96,17 @@
   width: 32px;
   padding-top: 32px;
   background-image: url("../img/icon-editor-contrast.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    padding-top: 16px;
+    background-image: url(../img/icon-editor-contrast-small.svg);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    padding-top: 32px;
+    margin-right: 0;
+    background-image: url("../img/icon-editor-contrast-pink.svg");
+  }
 }
