@@ -14,10 +14,13 @@
     width: 640px;
     .margin();
     flex-direction: row;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -31,8 +34,24 @@
 
 .page-footer__logo {
   margin-bottom: 40px;
+  background-image: url(../img/logo-pink-mobile.svg);
+  background-repeat: no-repeat;
+
+  &:active {
+    background-image: none;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.page-footer__image {
+  &:hover {
+    opacity: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

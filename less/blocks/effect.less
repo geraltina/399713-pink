@@ -28,6 +28,31 @@
     background-repeat: no-repeat;
     background-position: 0;
     box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 114px;
+      left: 20px;
+      width: 202px;
+      height: 202px;
+      background-image: url("../img/icon-editor-diagram-fill-small.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 137px;
+      left: 68px;
+      width: 106px;
+      height: 70px;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 149.47px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: @pink-color;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -36,14 +61,20 @@
     padding-right: 10px;
 
     &::before {
-      content: "";
-      position: absolute;
       top: 73px;
       left: 10px;
       width: 298px;
       height: 345px;
       background-image: url("../img/icon-editor-diagram-fill.svg");
-      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: 102px;
+      left: 68px;
+      width: 131px;
+      height: 87px;
+      font-size: 120px;
+      line-height: 186.84px;
     }
   }
 }
@@ -68,4 +99,13 @@
 
 .effect__link {
   color: @pink-color;
+
+  &:hover {
+    color: fade(@pink-color, 60%);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: fade(@base-color, 30%);
+  }
 }

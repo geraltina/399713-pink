@@ -9,23 +9,21 @@
 }
 
 .price__wrapper {
-  min-width: 320px;
-  max-width: 640px;
+  width: 320px;
   .margin();
   overflow: hidden;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 640px;
-    .padding();
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: visible;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 940px;
     max-width: 940px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
@@ -34,11 +32,11 @@
   border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
-    width: 600px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 920px;
+    width: 940px;
   }
 }
 
@@ -53,7 +51,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 152px;
+    width: 156px;
     height: 45px;
     padding: 0;
   }
@@ -70,7 +68,7 @@
   right: 17px;
   width: 31px;
   height: 21px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-green.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
@@ -90,16 +88,16 @@
   right: 19px;
   width: 27px;
   height: 27px;
-  background-image: url("../img/icon-no.svg");
+  background-image: url("../img/icon-no-red.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     top: 8px;
-    right: 57px;
+    right: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 107px;
+    right: 103px;
   }
 }
 
