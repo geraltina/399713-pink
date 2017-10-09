@@ -38,7 +38,7 @@
     min-width: 435px;
     max-width: 940px;
     margin: 0;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 }
 
@@ -50,8 +50,13 @@ fieldset.contest-form__wrapper {
 
 .contest-form__wrapper--contacts {
   @media (min-width: @desktop-width) {
-    display: flex;
     padding-left: 58px;
+  }
+}
+
+.contest-form__flex {
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -145,6 +150,51 @@ fieldset.contest-form__wrapper {
   }
 }
 
+.contest-form__list--two .contest-form__wrapper {
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.contest-form__list--two .contest-form__flex-row {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contest-form__list--two .contest-form__checkbox-flex {
+  margin-bottom: 36px;
+
+  @media (min-width: @desktop-width) {
+    width: 320px;
+    margin-bottom: 0;
+  }
+}
+
+.contest-form__list--three .contest-form__text {
+  @media (min-width: @desktop-width) {
+    width: 377px;
+  }
+}
+
+.contest-form__list--three .contest-form__label--contacts {
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 200;
+      top: -70px;
+      left: 295px;
+      width: 57px;
+      height: 57px;
+      background-color: #e5e5e5;
+    }
+  }
+}
+
 .contest-form__header {
   display: block;
   width: 220px;
@@ -191,6 +241,10 @@ fieldset.contest-form__wrapper {
       width: 320px;
       margin-left: 12px;
     }
+
+    &--three {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -224,6 +278,20 @@ fieldset.contest-form__wrapper {
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: baseline;
+  }
+}
+
+.contest-form__item--contacts .contest-form__text {
+  @media (min-width: @desktop-width) {
+    margin-right: 68px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.contest-form__item--contacts:nth-child(2n) .contest-form__text {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -261,18 +329,16 @@ fieldset.contest-form__wrapper {
   }
 }
 
-.contest-form__list--three .contest-form__text {
-  @media (min-width: @desktop-width) {
-    width: 43%;
-  }
-}
-
 .contest-form__label--contacts {
   margin-top: 40px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
