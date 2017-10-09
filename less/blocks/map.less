@@ -4,9 +4,19 @@
 }
 
 .map__wrapper {
+  position: relative;
   width: 320px;
   min-height: 203px;
   .margin();
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
