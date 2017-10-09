@@ -18,7 +18,8 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
     padding-top: 191px;
     padding-bottom: 148px;
     margin-top: -180px;
@@ -84,6 +85,7 @@
 
 .page-main__text--nomobile {
   position: absolute;
+  width: 0;
   margin: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
