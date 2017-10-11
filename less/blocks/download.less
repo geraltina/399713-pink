@@ -2,11 +2,11 @@
   width: 100%;
   .margin();
   margin-top: -76px;
-  padding-top: 396px;
+  padding-top: 468px;
   background-color: @dark-color;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 30% 30%, 45% 0;
+  background-position: 0% 40.7%, 51% 2%;
   color: white;
   box-sizing: border-box;
 
@@ -31,21 +31,24 @@
   background-color: @dark-color;
 
   @media (min-width: @tablet-width) {
-    width: 640px;
-    margin-top: -98px;
-    padding-top: 212px;
-    padding-bottom: 106px;
+    width: 100%;
+    max-width: 660px;
+    margin-top: -110px;
+    padding-top: 200px;
+    padding-bottom: 110px;
     .margin();
     background-color: transparent;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-size: auto, cover;
     background-repeat: no-repeat;
-    background-position: 80% 100%, 45% 0;
+    background-position: 80% 100%, 55% 0%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 960px;
+    max-width: 960px;
     margin-top: -110px;
+    padding-top: 220px;
+    padding-bottom: 120px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-position: 50% 100%;
   }
@@ -54,7 +57,7 @@
 /*Обёртка для центровки*/
 .download__wrapper--width {
   position: relative;
-  width: 320px;
+  width: 335px;
   .margin();
   .padding();
   box-sizing: border-box;
@@ -67,7 +70,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 340px;
+    width: 325px;
+    padding-left: 0;
   }
 }
 
@@ -76,27 +80,27 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    max-width: 192px;
+    max-width: 210px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     .margin();
     font-weight: 300;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 300px;
-    margin-bottom: 64px;
+    margin-bottom: 52px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 59px;
   }
 }
 
 .download__button {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   .margin();
   color: white;
   border: 3px solid white;
@@ -113,13 +117,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 285px;
-    margin-bottom: 46px;
+    width: 300px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
-    margin-bottom: 67px;
+    margin-bottom: 74px;
     padding-left: 28px;
     padding-right: 28px;
     font-size: 21px;
@@ -136,7 +140,7 @@
 
 .download__item {
   height: 0;
-  margin-right: 37px;
+  margin-right: 32px;
   overflow: hidden;
   background-repeat: no-repeat;
 
@@ -148,7 +152,12 @@
 .download__item--ios {
   width: 47px;
   padding-top: 56px;
+  margin-top: -3px;
   background-image: url("../img/logo-apple.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-top: -6px;
+  }
 }
 
 .download__item--android {
@@ -166,14 +175,15 @@
 .download__text {
   width: 280px;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 22px;
+  padding-bottom: 29px;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 300px;
-    padding-top: 38px;
+    .margin();
+    padding-top: 35px;
     padding-bottom: 0;
     font-size: 18px;
   }

@@ -1,3 +1,4 @@
+.slider,
 .slider-transform {
   position: relative;
 }
@@ -10,8 +11,27 @@
 .slider-transform__list {
   padding-left: 0;
   margin: 0;
-  padding-bottom: 80px;
   list-style: none;
+}
+
+.slider__list {
+  padding-bottom: 80px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 41px;
+  }
+}
+
+.slider-transform__list {
+  padding-bottom: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 95px;
+  }
 }
 
 .slider__item {
@@ -33,7 +53,6 @@
 .slider-transform__toggle {
   position: absolute;
   z-index: 100;
-  bottom: 28px;
   width: 6px;
   height: 5px;
   background-color: fade(@base-color, 30%);
@@ -52,6 +71,41 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.slider__toggle {
+  bottom: -3px;
+}
+
+.slider-transform__toggle {
+  bottom: 50px;
+}
+
+.slider__toggle--one,
+.slider-transform__toggle--four {
+  left: 41%;
+
+  @media (min-width: @tablet-width) {
+    left: 45%;
+  }
+}
+
+.slider__toggle--two,
+.slider-transform__toggle--five {
+  left: 48%;
+
+  @media (min-width: @tablet-width) {
+    left: 49%;
+  }
+}
+
+.slider__toggle--three,
+.slider-transform__toggle--six {
+  left: 55%;
+
+  @media (min-width: @tablet-width) {
+    left: 53%;
   }
 }
 
@@ -101,7 +155,7 @@
 }
 
 .slider-transform__input--five:checked ~ .slider-transform__slides .slider__table {
-  transform: translate(-30.5%);
+  transform: translate(-31%);
 
   @media (min-width: @tablet-width) {
     transform: none;
@@ -113,32 +167,5 @@
 
   @media (min-width: @tablet-width) {
     transform: none;
-  }
-}
-
-.slider__toggle--one,
-.slider-transform__toggle--four {
-  left: 40%;
-
-  @media (min-width: @tablet-width) {
-    left: 45%;
-  }
-}
-
-.slider__toggle--two,
-.slider-transform__toggle--five {
-  left: 47%;
-
-  @media (min-width: @tablet-width) {
-    left: 49%;
-  }
-}
-
-.slider__toggle--three,
-.slider-transform__toggle--six {
-  left: 54%;
-
-  @media (min-width: @tablet-width) {
-    left: 53%;
   }
 }

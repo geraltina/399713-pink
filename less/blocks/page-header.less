@@ -19,14 +19,15 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 640px;
+    width: 100%;
+    max-width: 660px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 960px;
+    max-width: 960px;
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 47px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -36,18 +37,20 @@
   display: block;
   align-self: flex-start;
   padding-top: 22px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+    width: 150px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-right: 174px;
+    margin-right: 165px;
     padding-left: 0;
   }
 }
