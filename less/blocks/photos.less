@@ -79,20 +79,6 @@
 }
 
 .photos__item--panorama {
-  @media (min-width: @tablet-width) {
-    flex-direction: column;
-    width: 100%;
-    max-width: 660px;
-    .margin();
-    margin-bottom: 51px;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1200px;
-  }
-}
-
-.photos__item--panorama {
   position: relative;
   z-index: 10;
 
@@ -123,6 +109,12 @@
   }
 
   @media (min-width: @tablet-width) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 660px;
+    .margin();
+    margin-bottom: 51px;
+
     &::before {
       top: 58px;
       right: 21px;
@@ -135,6 +127,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1200px;
+
     &::before {
       top: 54px;
       right: 135px;
