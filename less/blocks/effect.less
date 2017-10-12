@@ -94,7 +94,9 @@
 }
 
 .effect__header br {
-  display: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .effect__text {

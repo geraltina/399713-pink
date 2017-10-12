@@ -1,7 +1,7 @@
 .note {
   display: block;
   width: 276px;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 0;
   .margin();
   font-size: 14px;
@@ -18,4 +18,12 @@
 
 .note__star {
   color: @pink-color;
+}
+
+.note__only-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
