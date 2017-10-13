@@ -1,6 +1,5 @@
 .map {
   width: 100%;
-  background-color: #e5e5e5;
 }
 
 .map__wrapper {
@@ -11,17 +10,17 @@
   min-height: 203px;
   .margin();
   margin-top: 8px;
-  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
+  background-image: url(../img/bg-triangle-white-footer.svg), url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 142px 97px, 0 0;
+  background-position: 50% -13.7%, 142px 97px, 0 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    max-width: 640px;
+    max-width: 100%;
     min-height: 377px;
     margin-top: 0;
-    background-position: 49.5% 58%, 0 0;
+    background-image: url(../img/bg-triangle-white-footer-tablet.svg), url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.png");
+    background-position: 50% 0%, 0 0, 0 0;
   }
 
   @media (min-width: @desktop-width) {
