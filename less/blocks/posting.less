@@ -1,20 +1,20 @@
 .posting {
   width: 100%;
-
-  @media (min-width: @tablet-width) {
-    background-color: #f2f2f2;
-  }
+  padding-top: 20px;
+  background-color: #f2f2f2;
 
   @media (min-width: @desktop-width) {
     width: 940px;
     .margin();
+    padding: 0;
+    margin-bottom: 30px;
   }
 }
 
 .posting__wrapper--common {
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-top: 57px;
+    padding-top: 37px;
     width: 640px;
     padding-left: 10px;
     padding-right: 10px;
@@ -83,17 +83,21 @@
 }
 
 .posting__image {
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .posting__filter {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -129,7 +133,7 @@
 .posting__scale::after {
   content: "";
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
   left: -40px;
   width: 320px;
   height: 1px;
@@ -158,12 +162,15 @@
 .posting__controller {
   position: absolute;
   top: -7px;
-  right: 33px;
   width: 12px;
   height: 12px;
   background-color: white;
   border: 2px solid @pink-color;
   border-radius: 50%;
+
+  &--one {
+    right: 33px;
+  }
 
   &--two {
     right: 163px;
@@ -172,11 +179,35 @@
   &--three {
     right: 92px;
   }
+
+  @media (min-width: @tablet-width) {
+    top: -6px;
+    width: 10px;
+    height: 10px;
+
+    &--one {
+      right: 43px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--one {
+      right: 201px;
+    }
+
+    &--two {
+      right: 25px;
+    }
+
+    &--three {
+      right: 112px;
+    }
+  }
 }
 
 .posting__buttons {
   width: 100%;
-  padding-top: 38px;
+  padding-top: 44px;
   padding-bottom: 41px;
   background-color: #f2f2f2;
   box-sizing: border-box;
@@ -184,21 +215,26 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 68px;
     padding-left: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 153px;
+    margin-top: 150px;
     padding-left: 90px;
   }
 }
 
 .posting__button {
   margin-bottom: 12px;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {

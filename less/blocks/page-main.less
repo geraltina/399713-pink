@@ -5,7 +5,7 @@
   .padding();
   .margin();
   width: 100%;
-  min-height: 234px;
+  min-height: 245px;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
@@ -19,22 +19,30 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    max-width: 640px;
-    padding-top: 191px;
-    padding-bottom: 148px;
+    max-width: 660px;
+    padding-top: 171px;
+    padding-bottom: 140px;
     margin-top: -180px;
     font-size: 50px;
-    line-height: 56px;
+    line-height: 58px;
     background-size: cover;
+
+    &--form {
+      padding-bottom: 83px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
-    padding-top: 181px;
-    padding-bottom: 98px;
+    padding-top: 163px;
+    padding-bottom: 105px;
     padding-left: 10px;
     padding-right: 10px;
     background-image: none;
+
+    &--form {
+      max-width: 960px;
+      padding-bottom: 103px;
+    }
   }
 }
 
@@ -61,16 +69,68 @@
 
 .page-main__promo {
   .margin();
-  padding-top: 47px;
-  padding-bottom: 52px;
   box-sizing: border-box;
   text-align: center;
+
+  &--one {
+    padding-top: 47px;
+    padding-bottom: 48px;
+  }
+
+  &--two {
+    padding-top: 45px;
+    padding-bottom: 41px;
+  }
+
+  &--three {
+    padding-top: 47px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--one {
+      padding-top: 94px;
+      padding-bottom: 75px;
+    }
+
+    &--two {
+      padding-top: 43px;
+      padding-bottom: 67px;
+    }
+
+    &--three {
+      padding-top: 92px;
+      padding-bottom: 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--one {
+      padding-top: 91px;
+      padding-bottom: 88px;
+    }
+
+    &--two {
+      padding-top: 6px;
+      padding-bottom: 67px;
+    }
+
+    &--three {
+      padding-top: 92px;
+      padding-bottom: 84px;
+    }
+  }
 }
 
 .page-main__text {
   margin: 0;
   .margin();
-  width: 280px;
+  width: 275px;
+  line-height: 30px;
+
+  &--one {
+    width: 253px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 500px;
@@ -79,7 +139,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 760px;
+    width: 600px;
+
+    &--form {
+      width: 780px;
+    }
   }
 }
 

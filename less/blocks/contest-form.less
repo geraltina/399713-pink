@@ -29,7 +29,7 @@
 
   @media (min-width: @tablet-width) {
     width: 620px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
     padding-right: 0;
   }
 
@@ -38,19 +38,27 @@
     min-width: 435px;
     max-width: 940px;
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
   }
 }
 
 fieldset.contest-form__wrapper {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     border: 2px solid #e5e5e5;
   }
 }
 
 .contest-form__wrapper--contacts {
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-bottom: 25px;
+    margin-bottom: 53px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-left: 58px;
+    padding-left: 54px;
+    padding-bottom: 14px;
+    margin-bottom: 60px;
   }
 }
 
@@ -63,10 +71,17 @@ fieldset.contest-form__wrapper {
 .contest-form__wrapper--textarea {
   @media (min-width: @tablet-width) {
     padding-left: 0;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 44px;
   }
 }
 
 .contest-form__wrapper--button {
+  margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: baseline;
@@ -75,6 +90,11 @@ fieldset.contest-form__wrapper {
     padding: 0;
     margin-top: 67px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 64px;
+    margin-bottom: 0;
   }
 }
 
@@ -122,7 +142,7 @@ fieldset.contest-form__wrapper {
 
     &--three {
       width: 940px;
-      margin-bottom: 71px;
+      margin-bottom: 10px;
     }
 
     &--four {
@@ -137,10 +157,11 @@ fieldset.contest-form__wrapper {
 
 .contest-form__list--grey {
   padding-bottom: 42px;
-  margin-top: 23px;
+  margin-top: 12px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 67px;
     background-color: white;
   }
 
@@ -150,9 +171,15 @@ fieldset.contest-form__wrapper {
   }
 }
 
+.contest-form__list--two {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 63px;
+  }
+}
+
 .contest-form__list--two .contest-form__wrapper {
   @media (min-width: @desktop-width) {
-    padding-left: 0;
+    padding-left: 16px;
   }
 }
 
@@ -164,41 +191,44 @@ fieldset.contest-form__wrapper {
 }
 
 .contest-form__list--two .contest-form__checkbox-flex {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 320px;
     margin-bottom: 0;
-  }
-}
 
-.contest-form__list--three .contest-form__text {
-  @media (min-width: @desktop-width) {
-    width: 377px;
-  }
-}
-
-.contest-form__list--three .contest-form__label--contacts {
-  @media (min-width: @desktop-width) {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 200;
-      top: -70px;
-      left: 295px;
-      width: 57px;
-      height: 57px;
-      background-color: #e5e5e5;
+    &:first-child {
+      margin-right: 12px;
     }
+
+    &:nth-child(3n) {
+      margin-left: -12px;
+    }
+  }
+}
+
+.contest-form__list--four {
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -6px;
+    padding-bottom: 65px;
   }
 }
 
 .contest-form__header {
   display: block;
   width: 220px;
-  padding-top: 40px;
+  padding-top: 37px;
+  margin-top: 0;
   margin-bottom: 40px;
   margin-left: 30px;
   font-weight: normal;
@@ -208,39 +238,65 @@ fieldset.contest-form__wrapper {
   text-transform: uppercase;
   text-align: center;
 
+  &--three {
+    margin-bottom: 34px;
+  }
+
+  &--four {
+    margin-bottom: 16px;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0;
     margin-top: -10px;
-    .margin();
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 22px;
+    padding-right: 22px;
     margin-bottom: 31px;
     text-align: center;
     background-color: white;
 
     &--one {
       width: 390px;
+      margin-left: 70px;
+      margin-bottom: 44px;
     }
 
     &--two {
       width: 200px;
+      margin-left: 165px;
     }
 
     &--three {
-      width: 330px;
+      width: 335px;
+      margin-left: 100px;
+      margin-bottom: 43px;
     }
 
     &--four {
       width: 200px;
+      margin-left: 185px;
+      margin-bottom: 38px;
     }
   }
 
   @media (min-width: @desktop-width) {
+    &--one {
+      width: 390px;
+      margin-left: 250px;
+      margin-bottom: 44px;
+    }
+
     &--three {
       width: 320px;
-      margin-left: 12px;
+      margin-left: 10px;
       margin-bottom: 45px;
+    }
+
+    &--four {
+      width: 200px;
+      margin-left: 335px;
+      margin-bottom: 38px;
     }
   }
 }
@@ -253,11 +309,17 @@ fieldset.contest-form__wrapper {
 
   @media (min-width: @tablet-width) {
     position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-top: -10px;
-    margin-bottom: 40px;
-    .margin();
+    margin-bottom: 36px;
+    margin-left: 165px;
     overflow: visible;
     clip: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 283px;
   }
 }
 
@@ -272,15 +334,35 @@ fieldset.contest-form__wrapper {
 }
 
 .contest-form__item--row {
+  margin-top: -10px;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: baseline;
+    margin-top: 0;
+  }
+}
+
+.contest-form__item--row:last-child .contest-form__text {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 
 .contest-form__item--contacts .contest-form__text {
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 81%;
+    .margin();
+    margin-bottom: 12px;
+    padding-left: 18px;
+  }
+
   @media (min-width: @desktop-width) {
+    width: 377px;
     margin-right: 68px;
+    margin-bottom: 8px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -302,6 +384,8 @@ fieldset.contest-form__wrapper {
 }
 
 .contest-form__label--personal {
+  line-height: 24px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 21px;
@@ -320,22 +404,36 @@ fieldset.contest-form__wrapper {
   }
 }
 
-.contest-form__item--row:last-child .contest-form__text {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
 .contest-form__label--contacts {
-  margin-top: 40px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 78px;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 200;
+      top: -73px;
+      left: 418px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    margin-left: 18px;
+
+    &::after {
+      top: -70px;
+      left: 297px;
+    }
   }
 }
 
@@ -359,15 +457,27 @@ fieldset.contest-form__wrapper {
 
   @media (min-width: @tablet-width) {
     margin-left: 38px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 35px;
+    padding-left: 60px;
   }
 }
 
 .contest-form__item:last-child .contest-form__label--grey {
   margin-bottom: 0;
+}
+
+.contest-form__label--radio {
+  margin-bottom: 35px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 49px;
+    margin-bottom: 35px;
+  }
+}
+
+.contest-form__label--checkbox {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .contest-form__checkbox + .contest-form__label--checkbox::before {
@@ -425,12 +535,12 @@ fieldset.contest-form__wrapper {
 
 .contest-form__text {
   position: relative;
-  width: 276px;
-  height: 59px;
+  width: 280px;
+  height: 63px;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 21px;
-  margin-bottom: 19px;
+  margin-bottom: 30px;
   box-sizing: border-box;
   border: 2px solid #e5e5e5;
 
@@ -472,34 +582,27 @@ fieldset.contest-form__wrapper {
   }
 }
 
-.contest-form__label--textarea {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 30px;
-  color: @pink-color;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .contest-form__textarea {
-  width: 276px;
-  min-height: 197px;
-  padding: 22px 19px;
-  margin-bottom: 48px;
+  width: 280px;
+  min-height: 202px;
+  padding: 15px 19px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 30px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 496px;
-    min-height: 189px;
+    width: 500px;
+    min-height: 194px;
     margin-bottom: 0;
     .margin();
   }
 
   @media (min-width: @desktop-width) {
     width: 820px;
+    min-height: 127px;
   }
 
   &::-webkit-input-placeholder {
