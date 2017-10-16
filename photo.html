@@ -8,7 +8,13 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo"><img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink">
+          </picture>
+        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__toggle" href="#">Открыть меню</a>
           <ul class="main-nav__list site-list">
@@ -37,7 +43,11 @@
       </div>
       <section class="photos">
         <article class="photos__item  photos__item--panorama">
-          <img class="photos__image  photos__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото-1">
+          <picture class="photos__pictures  photos__pictures--panorama">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="photos__image  photos__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото-1">
+          </picture>
           <div class="photos__description  photos__description--panorama">
             <div class="photos__wrapper  photos__wrapper--panorama">
               <cite class="photos__author">Анна</cite>
@@ -52,7 +62,11 @@
         </article>
         <div class="photos__wrapper  photos__wrapper--flex">
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото-2">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-car-mobile@1x.jpg" alt="Фото-2">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -68,7 +82,11 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото-3">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото-3">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -84,7 +102,11 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото-4">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото-4">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -100,7 +122,11 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото-5">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото-5">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -116,7 +142,11 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото-6">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото-6">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -132,7 +162,11 @@
           </div>
         </article>
         <article class="photos__item">
-          <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото-7">
+          <picture class="photos__pictures">
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+            <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото-7">
+          </picture>
           <div class="photos__description  photos__description--post">
             <div class="photos__wrapper  photos__wrapper--one">
               <div class="photos__wrapper  photos__wrapper--two">
@@ -155,7 +189,11 @@
       <section class="posting">
         <div class="posting__wrapper  posting__wrapper--common">
           <div class="posting__wrapper  posting__wrapper--width">
-            <img class="posting__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+            <picture class="photos__pictures  photos__pictures--posting">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img class="posting__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            </picture>
           </div>
           <div class="posting__wrapper  posting__wrapper--position">
             <div class="posting__wrapper  posting__wrapper--flex">
@@ -187,7 +225,12 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img class="page-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
+      <a class="page-footer__logo">
+        <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__image" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+          </picture>
+      </a>
       <div class="social-icons">
         <a class="social-icons__item  social-icons__item--tw" href="#">Twitter</a>
         <a class="social-icons__item  social-icons__item--fb" href="#">Facebook</a>

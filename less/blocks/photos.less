@@ -67,6 +67,32 @@
   }
 }
 
+.photos__pictures {
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+.photos__pictures--panorama {
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+  }
+}
+
+.photos__pictures--posting {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
 .photos__image {
   @media (min-width: @tablet-width) {
     width: 300px;
@@ -150,7 +176,7 @@
 .photos__image--panorama {
   @media (min-width: @tablet-width) {
     width: 100%;
-    max-width: 660px;
+    max-width: 700px;
     height: 509px;
   }
 
