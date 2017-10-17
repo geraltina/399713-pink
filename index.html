@@ -9,7 +9,13 @@
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo"><img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink">
+          </picture>
+        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__toggle" href="#">Открыть меню</a>
           <ul class="main-nav__list site-list">
@@ -213,7 +219,12 @@
       </section>
     </main>
     <footer class="page-footer page-footer--nomobile">
-      <a class="page-footer__logo"><img class="page-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
+      <a class="page-footer__logo">
+        <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__image" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+          </picture>
+      </a>
       <div class="social-icons">
         <a class="social-icons__item  social-icons__item--tw" href="#">Twitter</a>
         <a class="social-icons__item  social-icons__item--fb" href="#">Facebook</a>
@@ -223,6 +234,7 @@
         <span class="copyright__text">Разработано</span><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
       </div>
     </footer>
+    <script src="picturefill.js"></script>
     <script src="js/file.js"></script>
   </body>
 </html>

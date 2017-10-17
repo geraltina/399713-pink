@@ -1,5 +1,20 @@
 .feedback {
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: 47.2%;
+      width: 79px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .feedback__wrapper {
@@ -19,11 +34,34 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
     width: 100%;
     max-width: 960px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 183px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 51%;
+      left: 10px;
+      width: 22px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 51%;
+      right: 10px;
+      width: 22px;
+      height: 42px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
