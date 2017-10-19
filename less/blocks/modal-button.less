@@ -15,6 +15,22 @@
   border-radius: 2px;
   text-transform: uppercase;
   box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: white;
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
     width: 298px;

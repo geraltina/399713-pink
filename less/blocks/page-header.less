@@ -43,6 +43,13 @@
   @media (min-width: @tablet-width) {
     padding-top: 27px;
     padding-bottom: 36px;
+    background-image: url("../img/logo-pink-mobile.svg");
+    background-position: 4% 39%;
+    background-repeat: no-repeat;
+
+    &:active {
+      background-image: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -52,5 +59,38 @@
     padding-bottom: 0;
     margin-right: 165px;
     padding-left: 0;
+    background-image: none;
+
+    &:hover {
+      background-image: url("../img/logo-pink-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:active {
+      background-image: none;
+    }
+  }
+}
+
+.page-header__image {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      opacity: 0;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-header__image--active {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }

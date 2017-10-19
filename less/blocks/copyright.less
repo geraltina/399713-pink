@@ -17,21 +17,21 @@
 
 .copyright__link {
   width: 27px;
-  height: 0;
-  padding-top: 35px;
-  background-image: url("../img/logo-htmlacademy-pink.svg");
-  background-repeat: no-repeat;
-  overflow: hidden;
-
-  &:hover {
-    background-image: url("../img/logo-htmlacademy.svg");
-  }
-
-  &:active {
-    background-image: url("../img/logo-htmlacademy-opacity.svg");
-  }
+  height: 35px;
 
   @media (min-width: @tablet-width) {
     margin-top: 12px;
   }
+}
+
+.copyright__link .copyright__svg {
+  fill: @pink-color;
+}
+
+.copyright__link .copyright__svg:hover {
+  fill: black;
+}
+
+.copyright__link .copyright__svg:active {
+  opacity: 0.3;
 }

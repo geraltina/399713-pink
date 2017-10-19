@@ -124,6 +124,16 @@
   color: @pink-color;
   text-decoration: none;
 
+  &:hover {
+    color: @base-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@base-color, 30%);
+    text-decoration: none;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 7px;
   }
