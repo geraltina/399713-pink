@@ -40,29 +40,38 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 183px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 51%;
-      left: 10px;
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-left.svg");
-      background-repeat: no-repeat;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 51%;
-      right: 10px;
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-right.svg");
-      background-repeat: no-repeat;
-    }
   }
+}
+
+.feedback__arrow {
+  position: absolute;
+  z-index: 200;
+  top: 51%;
+  display: none;
+  width: 22px;
+  height: 42px;
+  fill: fade(@base-color, 30%);
+  cursor: pointer;
+
+  &--left {
+    left: 10px;
+  }
+
+  &--right {
+    right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.feedback__arrow:hover {
+  fill: fade(@base-color, 60%);
+}
+
+.feedback__arrow:active {
+  fill: fade(@base-color, 10%);
 }
 
 .feedback__item {

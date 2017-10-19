@@ -39,19 +39,17 @@
   padding-top: 22px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-image: url(../img/logo-pink-white-mobile-hover.svg);
-  background-repeat: no-repeat;
-  background-position: 6% 45%;
-
-  &:active {
-    background-image: none;
-  }
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
     padding-bottom: 36px;
     background-image: url("../img/logo-pink-mobile.svg");
-    background-position: 4% 39%; 
+    background-position: 4% 39%;
+    background-repeat: no-repeat;
+
+    &:active {
+      background-image: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -76,12 +74,14 @@
 }
 
 .page-header__image {
-  &:hover {
-    opacity: 0;
-  }
+  @media (min-width: @tablet-width) {
+    &:hover {
+      opacity: 0;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
