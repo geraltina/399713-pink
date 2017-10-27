@@ -19,9 +19,9 @@
             <img class="page-header__image  page-header__image--active" src="img/logo-pink-white-mobile.svg" alt="Pink">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <a class="main-nav__toggle" href="#">Открыть меню</a>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list  site-list">
             <li class="site-list__item">
               <a class="site-list__link  site-list__link--active">Главная</a>
             </li>
@@ -43,20 +43,20 @@
       <section class="download">
         <div class="download__wrapper  download__wrapper--color">
           <div class="download__wrapper  download__wrapper--width">
-            <h2 class="download__header--nomobile">Взгляните на жизнь иначе!</h2>
-            <a class="download__button button" href="#">Скачать приложение</a>
+            <h2 class="download__header  download__header--nomobile">Взгляните на жизнь иначе!</h2>
+            <a class="download__button  button" href="https://www.apple.com/ru/itunes/download/">Скачать приложение</a>
             <div class="download__list">
-              <a class="download__item  download__item--ios" href="#">
+              <a class="download__item  download__item--ios" href="https://www.apple.com/ru/itunes/download/">
                 <svg viewBox="0 0 46.21 56.753">
                   <use xlink:href="#sprite-apple"></use>
                 </svg>
               </a>
-              <a class="download__item  download__item--android" href="#">
+              <a class="download__item  download__item--android" href="https://play.google.com/store/apps?hl=ru">
                 <svg viewBox="0 0 42.084 47.041">
                   <use xlink:href="#sprite-android"></use>
                 </svg>
               </a>
-              <a class="download__item  download__item--windows" href="#">
+              <a class="download__item  download__item--windows" href="https://www.microsoft.com/ru-ru/store/apps">
                 <svg viewBox="0 0 43.922 41.992">
                   <use xlink:href="#sprite-microsoft"></use>
                 </svg>
@@ -102,10 +102,10 @@
         <div class="feedback__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="feedback__slider  slider">
-            <svg class="feedback__arrow  feedback__arrow--left" viewBox="0 0 21.706 41.719">
+            <svg class="feedback__arrow  feedback__arrow--left" viewBox="0 0 21.706 41.719" tabindex="0">
               <use xlink:href="#sprite-review-arrow-left"></use>
             </svg>
-            <svg class="feedback__arrow  feedback__arrow--right" viewBox="0 0 21.706 41.719">
+            <svg class="feedback__arrow  feedback__arrow--right" viewBox="0 0 21.706 41.719" tabindex="0">
               <use xlink:href="#sprite-review-arrow-right"></use>
             </svg>
             <input class="visually-hidden  slider__input  slider__input--one" type="radio" name="feedback-toggle" id="btn-1" checked="">
@@ -242,16 +242,16 @@
             <source media="(min-width: 660px)" srcset="img/bg-triangle-white-footer-tablet.svg">
             <img class="map__triangle" src="img/bg-triangle-white-footer.svg" alt="Pink">
           </picture>
-          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf04757b5006889daf2294806c0a6d7607292b2eba79443a5012ee9f69dc56a1&amp;source=constructor" width="100%" height="100%"></iframe>
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acf04757b5006889daf2294806c0a6d7607292b2eba79443a5012ee9f69dc56a1&amp;source=constructor" min-width="320px" max-width="960px" min-height="203px" max-height="503px"></iframe>
         </div>
       </section>
     </main>
-    <footer class="page-footer page-footer--nomobile">
+    <footer class="page-footer  page-footer--nomobile">
       <a class="page-footer__logo  page-footer__logo--active">
         <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="page-footer__image  page-footer__image--active" src="img/logo-pink-blue-mobile.svg" alt="Pink">
-          </picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__image  page-footer__image--active" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+        </picture>
       </a>
       <div class="social-icons">
         <a class="social-icons__item  social-icons__item--tw" href="#">Twitter</a>
@@ -261,9 +261,10 @@
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__svg" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
+          <svg class="copyright__svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
             <use xlink:href="#sprite-htmlacademy"></use>
           </svg>
+          HTML Academy
         </a>
       </div>
     </footer>
