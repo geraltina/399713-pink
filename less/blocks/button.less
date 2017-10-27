@@ -23,6 +23,7 @@
 .button--submit {
   color: @pink-color;
   border: 3px solid @pink-color;
+  letter-spacing: 1px;
 
   &:hover {
     background-color: @pink-color;
@@ -36,7 +37,6 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 41px;
-    letter-spacing: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,16 +45,17 @@
 }
 
 .button--reset {
-  color: fade(@base-color, 10%);
+  color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
+  letter-spacing: 1px;
 
   &:hover {
-    color: fade(@base-color, 30%);
+    color: rgba(40, 54, 69, 0.3);
     border: 3px solid rgba(40, 54, 69, 0.3);
   }
 
   &:active {
-    color: fade(white, 30%);
+    color: rgba(255, 255, 255, 0.3);
     background-color: rgba(40, 54, 69, 0.3);
     border: 3px solid rgba(40, 54, 69, 0);
   }
