@@ -21,20 +21,15 @@
 }
 
 .filter-list__item {
+  position: relative;
   height: 0;
   overflow: hidden;
   background-repeat: no-repeat;
-  opacity: 0.3;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.5;
-  }
 
   @media (min-width: @tablet-width) {
     margin-top: 27px;
     margin-bottom: 24px;
-    opacity: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,27 +48,26 @@
   }
 }
 
-.filter-list__item--active {
+.filter-list__item--active,
+.filter-list__item--active:hover {
+  fill: @pink-color;
   opacity: 1;
 }
 
 .filter-list__item--framing {
   width: 48px;
   padding-top: 48px;
-  background-image: url("../img/icon-editor-crop-pink.svg");
 
   @media (min-width: @tablet-width) {
     width: 24px;
     padding-top: 24px;
     margin-right: 0;
-    background-image: url("../img/icon-editor-crop-small.svg");
   }
 
   @media (min-width: @desktop-width) {
     width: 48px;
     padding-top: 48px;
     margin-right: 0;
-    background-image: url("../img/icon-editor-crop-pink.svg");
   }
 }
 
@@ -81,14 +75,12 @@
   width: 48px;
   padding-top: 48px;
   margin-right: 9px;
-  background-image: url("../img/icon-editor-fill.svg");
 
   @media (min-width: @tablet-width) {
     width: 24px;
     padding-top: 24px;
     margin-right: 0;
     margin-left: -2px;
-    background-image: url("../img/icon-editor-fill-small.svg");
   }
 
   @media (min-width: @desktop-width) {
@@ -97,26 +89,53 @@
     margin-right: 0;
     margin-left: 0;
     margin-top: -3px;
-    background-image: url("../img/icon-editor-fill-pink.svg");
   }
 }
 
 .filter-list__item--contrast {
-  width: 32px;
-  padding-top: 32px;
-  background-image: url("../img/icon-editor-contrast.svg");
+  width: 34px;
+  padding-top: 34px;
 
   @media (min-width: @tablet-width) {
     width: 16px;
     padding-top: 16px;
-    background-image: url("../img/icon-editor-contrast-small.svg");
   }
 
   @media (min-width: @desktop-width) {
-    width: 32px;
-    padding-top: 32px;
+    width: 34px;
+    padding-top: 34px;
     margin-right: 0;
     margin-bottom: 15px;
-    background-image: url("../img/icon-editor-contrast-pink.svg");
+  }
+}
+
+.filter-list__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill-opacity: 0.3;
+
+  &--active {
+    fill: @pink-color;
+    fill-opacity: 1;
+  }
+
+  &:hover {
+    fill-opacity: 0.5;
+  }
+}
+
+.filter-list__svg--framing,
+.filter-list__svg--effects {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.filter-list__svg--contrast {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
   }
 }

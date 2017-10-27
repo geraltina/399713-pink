@@ -68,6 +68,8 @@
 }
 
 .photos__pictures {
+  height: 180px;
+
   @media (min-width: @tablet-width) {
     height: 300px;
   }
@@ -78,6 +80,8 @@
 }
 
 .photos__pictures--panorama {
+  height: 137px;
+
   @media (min-width: @tablet-width) {
     height: 509px;
   }
@@ -91,6 +95,10 @@
   @media (min-width: @tablet-width) {
     height: 400px;
   }
+}
+
+.photos__link {
+  line-height: 0;
 }
 
 .photos__image {
@@ -213,7 +221,6 @@
 
 .photos__description--post {
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
     min-height: 155px;
   }
 }
@@ -225,7 +232,8 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    padding-right: 30px;
+    padding-right: 19px;
+    padding-bottom: 23px;
   }
 }
 
@@ -257,11 +265,13 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     width: 100%;
+    margin-top: auto;
     margin-left: auto;
   }
 }
 
 .photos__text {
+  min-height: 25px;
   margin: 0;
   margin-bottom: 9px;
 }
